@@ -1,0 +1,153 @@
+.video {
+
+    .container {
+
+        .video_inr {
+            background-image: url('../../assets/video-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            padding: 60px;
+
+            @media (max-width: 991.98px) {
+                padding: 40px;
+            }
+
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 24px;
+
+                @media (max-width: 575.98px) {
+                    flex-direction: column;
+                }
+
+                .col_content_otr {
+
+                    .col_content_inr {
+
+                        .heading {
+                            font-size: 80px;
+                            line-height: 1.2;
+                            font-family: 'Lexend-Bold';
+                            -webkit-text-stroke-width: 1px;
+                            -webkit-text-stroke-color: rgba(255, 255, 255, 0.3);
+                            text-transform: uppercase;
+                            color: transparent;
+
+                            @media (max-width: 1199px) {
+                                font-size: 60px;
+                            }
+
+                            @media (max-width: 991.98px) {
+                                font-size: 45px;
+                            }
+
+                            @media (max-width: 767.98px) {
+                                font-size: 40px;
+                            }
+
+                            @media (max-width: 575.98px) {
+                                width: 230px;
+                            }
+
+                            @media (max-width: 320px) {
+                                width: 100%;
+                            }
+
+                            .heading_inr {
+                                margin-left: 130px;
+                                display: flex;
+
+                                @media (max-width: 1199px) {
+                                    margin-left: 90px;
+                                }
+
+                                @media (max-width: 320px) {
+                                    margin-left: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .col_action_otr {
+
+                    .col_action_inr {
+                        max-width: 336px;
+                        margin-left: auto;
+                        position: relative;
+
+                        @media (max-width: 1199px) {
+                            width: 240px;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            width: 175px;
+                        }
+
+                        @media (max-width: 575.98px) {
+                            width: 100%;
+                            margin: 0;
+                        }
+
+                        .img_otr {
+
+                            .img {
+                                animation: border-transform 7s linear infinite alternate forwards;
+                            }
+                        }
+
+                        .play_btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 104px;
+                            height: 104px;
+                            background-color: var(--white-shade);
+                            border-radius: 100%;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+
+                            @media (max-width: 1199px) {
+                                width: 80px;
+                                height: 80px;
+                            }
+
+                            @media (max-width: 767.98px) {
+                                width: 75px;
+                                height: 75px;
+                            }
+
+                            &::after {
+                                top: -14px;
+                                bottom: -14px;
+                                left: -14px;
+                                right: -14px;
+                                content: "";
+                                opacity: 0.12;
+                                position: absolute;
+                                border-radius: 152px;
+                                border: 1px solid var(--white-shade);
+                                animation: ripple 4s linear infinite;
+                            }
+
+                            .icon {
+                                font-size: 24px;
+                                color: var(--black-color);
+
+                                @media (max-width: 767.98px) {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

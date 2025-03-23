@@ -1,0 +1,142 @@
+.newsletter_ctae {
+
+    .container {
+
+        .newsletter_inr {
+            background: var(--gradient);
+            border-radius: 10px;
+            padding: 80px 40px;
+            position: relative;
+
+            @media (max-width: 767.98px) {
+                padding: 60px 24px;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../assets//newsletter-shape1.png');
+                top: 26px;
+                left: 18px;
+                z-index: 2;
+                width: 35px;
+                height: 32px;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url('../../assets//newsletter-shape2.png');
+                right: 42px;
+                bottom: 20px;
+                z-index: 2;
+                width: 35px;
+                height: 32px;
+            }
+
+            .row {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                @media (max-width: 991.98px) {
+                    flex-direction: column;
+                    align-items: initial;
+                }
+
+                .col_content_otr {
+                    @media (min-width: 991.98px) {
+                        flex: 1 1 50%;
+                    }
+
+                    .col_content_inr {
+                        display: grid;
+                        align-items: center;
+                        grid-template-columns: auto 1fr;
+                        gap: 0 40px;
+
+                        @media (max-width: 1199px) {
+                            gap: 0 30px;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            grid-template-columns: 1fr;
+                        }
+
+                        .icon_otr {
+
+                            @media (max-width: 767.98px) {
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 16px;
+                            }
+
+                            .icon {
+                                width: 82px;
+                                height: 70px;
+                                object-fit: contain;
+
+                                @media (max-width: 1199px) {
+                                    width: 70px;
+                                    height: auto;
+                                }
+
+                                @media (max-width: 767.98px) {
+                                    width: 60px;
+                                }
+                            }
+                        }
+
+                        .heading {
+                            color: var(--white-shade);
+
+                            @media (max-width: 767.98px) {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                .col_input_otr {
+                    @media (min-width: 991.98px) {
+                        flex: 1 1 50%;
+                    }
+
+
+                    .col_input_inr {
+                        position: relative;
+
+                        .input_otr {
+
+                            .mail_input {
+
+                                @media (max-width: 1399px) {
+                                    height: 65px;
+                                }
+
+                                @media (max-width: 767.98px) {
+                                    height: 55px;
+                                }
+                            }
+                        }
+
+                        .action_otr {
+                            position: absolute;
+                            top: 50%;
+                            right: 12px;
+                            transform: translateY(-50%);
+
+                            @media (max-width: 575.98px) {
+                                position: relative;
+                                top: 0;
+                                right: 0;
+                                transform: translateY(0);
+                                margin-top: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

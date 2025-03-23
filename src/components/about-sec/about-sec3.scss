@@ -1,0 +1,231 @@
+.about_us {
+
+    .container {
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 24px 0;
+            justify-content: space-between;
+
+            @media (max-width: 991.98px) {
+                flex-direction: column;
+            }
+
+            .col_img_otr {
+                @media (min-width: 991.98px) {
+                    width: calc(50% - 12px);
+                }
+
+                .col_img_inr {
+
+                    @media (min-width: 991.98px) {
+                        margin-right: 20px;
+                    }
+
+                    .image_one {
+
+                        @media (min-width: 575.98px) {
+                            text-align: right;
+                        }
+
+                        .img {
+                            max-width: 445px;
+                            border-radius: 10px;
+
+                            @media (max-width: 575.98px) {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+
+                    .image_two {
+                        margin-top: -240px;
+
+                        @media (max-width: 575.98px) {
+                            margin-top: 24px;
+                        }
+
+                        .img {
+                            border-radius: 10px;
+                            border: 1px solid red;
+                            max-width: 308px;
+                            object-fit: cover;
+                            object-position: center;
+                            border: 5px solid var(--white-color);
+
+                            @media (max-width: 575.98px) {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col_content_otr {
+                @media (min-width: 991.98px) {
+                    width: calc(50% - 12px);
+                }
+
+                .col_content_inr {
+
+                    margin-left: 40px;
+
+                    @media (max-width: 1399px) {
+                        margin-left: 0;
+                    }
+
+                    .section_title {}
+
+                    .award_row {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 24px 0;
+                        margin-top: 40px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #F0F0F0;
+
+                        @media (max-width: 575.98px) {
+                            flex-direction: column;
+                        }
+
+                        .col_award_list_otr {
+                            @media (min-width: 575.98px) {
+                                width: calc(60% - 12px);
+                            }
+
+                            // @media (max-width: 575.98px) {
+                            //     width: calc(40% - 12px);
+                            // }
+
+                            .col_award_list_inr {
+
+                                .award_ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 18px;
+
+                                    .award_li {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 16px;
+
+                                        .icon {
+                                            width: 20px;
+                                            height: 20px;
+                                            object-fit: contain;
+                                        }
+
+                                        .heading {
+                                            color: var(--black-color);
+
+                                            @media (max-width: 1199px) {
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .col_award_card_otr {
+                            @media (min-width: 575.98px) {
+                                width: calc(60% - 12px);
+                            }
+
+                            .col_award_card_inr {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px;
+                                align-items: center;
+                                padding: 0 24px 24px 24px;
+                                background-color: var(--white-shade);
+                                border-radius: 10px;
+                                box-shadow: var(--box-shadow);
+
+                                .icon_otr {
+
+                                    .icon {
+                                        width: 100px;
+                                        height: 80px;
+                                        object-fit: cover;
+                                        border-radius: 0 0 10px 10px;
+                                    }
+                                }
+
+                                .content {
+                                    text-align: center;
+
+                                    .heading {
+                                        color: var(--black-color);
+                                    }
+
+                                    .text {
+                                        color: var(--body-color);
+                                        margin-top: 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .video_info_otr {
+                        margin-top: 40px;
+
+                        .video_info_inr {
+                            display: grid;
+                            grid-template-columns: auto 1fr;
+                            align-items: center;
+                            gap: 20px;
+
+                            .icon_otr {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 80px;
+                                height: 80px;
+                                background-color: var(--white-shade);
+                                border-radius: 100%;
+                                box-shadow: var(--box-shadow);
+                                cursor: pointer;
+                                transition: var(--transition);
+
+                                @media (max-width: 767.98px) {
+                                    width: 65px;
+                                    height: 65px;
+                                }
+
+                                &:hover {
+                                    transform: translateY(-5px);
+                                }
+
+                                .icon {}
+                            }
+
+                            .content {
+
+                                .heading {
+                                    color: var(--black-color);
+
+                                    @media (max-width: 420px) {
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .desc {
+                                    color: var(--body-color);
+                                    margin-top: 6px;
+
+                                    @media (max-width: 420px) {
+                                        font-size: 12px;
+                                        margin-top: 4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

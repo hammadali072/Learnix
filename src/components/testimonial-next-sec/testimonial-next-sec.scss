@@ -1,0 +1,55 @@
+.testimonials_next {
+
+    .container {
+
+        .testimonials_next_inr {
+            background-color: #FFEBDF;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            padding-inline: 15px;
+
+            .wrapper {
+                max-width: 700px;
+                margin: auto;
+                text-align: center;
+                position: relative;
+                z-index: 2;
+
+                .section_title {}
+
+                .desc {
+                    color: var(--body-color);
+                    margin: 32px 0;
+                }
+
+                .action_main {
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    gap: 40px;
+
+                    @media (max-width: 767.98px) {
+                        gap: 12px 24px;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+
+            .bg_otr {
+
+                @media (max-width: 1199px) {
+                    display: none;
+                }
+
+                .bg {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

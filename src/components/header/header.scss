@@ -1,0 +1,197 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+
+    .container {
+
+        .header_inr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px 0;
+
+            @media (max-width: 991.98px) {
+                padding: 20px 0;
+            }
+
+            .logo_main {
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 991.98px) {
+                    justify-content: space-between;
+                    width: 100%;
+                }
+
+                .logo_otr {
+
+                    .logo {
+                        width: 194px;
+                        height: auto;
+                        object-fit: contain;
+                        cursor: pointer;
+
+                        @media (max-width: 1399px) {
+                            max-width: 120px;
+                        }
+                    }
+                }
+
+                .menu_icon_otr {
+                    display: none;
+                    cursor: pointer;
+
+                    @media (max-width: 991.98px) {
+                        display: block;
+                    }
+
+                    .icon {
+                        font-size: 24px;
+                        color: var(--black-color);
+                        transition: .3s;
+
+                        &:hover {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+
+            .menu_otr {
+
+                @media (max-width: 991.98px) {
+                    display: none;
+                }
+
+                .menu_ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 0 40px;
+
+                    @media (max-width: 1199px) {
+                        gap: 0 28px;
+                    }
+
+                    .menu_li {
+                        position: relative;
+                        padding: 15px 0;
+                        transition: .3s;
+
+                        &:hover {
+
+                            .menu_a {
+
+                                .menu_text {
+                                    color: var(--primary-color);
+
+                                    &.menu-light {
+                                        color: var(--primary-color);
+                                    }
+                                }
+
+                                .menu_icon {
+                                    color: var(--primary-color);
+
+                                    &.menu-light {
+                                        color: var(--primary-color);
+                                    }
+                                }
+                            }
+
+                            .dropdown_otr {
+                                top: 100%;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+
+                        .menu_a {
+                            display: flex;
+                            align-items: baseline;
+                            gap: 0 8px;
+                            cursor: pointer;
+
+                            @media (max-width: 1199px) {
+                                gap: 0 8px;
+                            }
+
+                            .menu_text {
+                                color: var(--black-color);
+                                transition: .3s;
+
+                                &.menu-light {
+                                    color: #fff;
+                                }
+
+                                @media (max-width: 1199px) {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .menu_icon {
+                                font-size: 16px;
+                                color: var(--black-color);
+                                transition: .3s;
+
+                                &.menu-light {
+                                    color: #fff;
+                                }
+
+                                @media (max-width: 1199px) {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        .dropdown_otr {
+                            position: absolute;
+                            top: 90px;
+                            left: 0;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all .3s ease-in-out;
+
+                            .dropdown_ul {
+                                width: 250px;
+                                background-color: var(--white-shade);
+                                box-shadow: var(--dropdown-shadow);
+
+                                .dropdown_li {
+
+                                    &:not(:last-child) {
+                                        border-bottom: 2px dashed #ededed;
+                                    }
+
+                                    .dropdown_a {
+                                        padding: 15px;
+                                        line-height: 1;
+                                        color: var(--black-color);
+                                        transition: .3s;
+
+                                        &:hover {
+                                            color: var(--primary-color);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .action_otr {
+
+                @media (max-width: 991.98px) {
+                    display: none;
+                }
+
+
+            }
+        }
+    }
+}
+
+.header-relative {
+    position: relative;
+}

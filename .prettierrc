@@ -1,0 +1,10 @@
+{
+     "tabWidth": 5,
+     "printWidth": 80,
+     "proseWrap": "never",
+     "htmlWhitespaceSensitivity": "ignore",
+     "preserveBlankLines": false,
+     "trailingComma": "none",
+     "jsxBracketSameLine": false,
+     "jsxSingleQuote": false
+}

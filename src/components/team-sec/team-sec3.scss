@@ -1,0 +1,203 @@
+.team_sec {
+    background-color: #fff7fc;
+    position: relative;
+
+    .container {
+
+        .wrapper {
+            text-align: center;
+            margin-bottom: 48px;
+
+            @media (max-width: 767.98px) {
+                margin-bottom: 30px;
+            }
+
+            .section_title {}
+        }
+
+        .row {
+            display: flex;
+            gap: 24px 0;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+
+            .col_box_otr {
+                width: calc(25% - 12px);
+
+                .col_box_inr {
+
+                    .content {
+                        border-radius: 8px;
+                        padding: 40px 20px 140px;
+                        background-color: #0c1327;
+
+                        @media (max-width: 767.98px) {
+                            padding: 30px 20px 130px;
+                        }
+
+                        .heading {
+                            color: var(--white-shade);
+
+                            @media (max-width: 991.98px) {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .text {
+                            color: var(--white-shade);
+                            margin-top: 10px;
+
+                            @media (max-width: 767.98px) {
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+
+                    .img_main {
+                        margin-top: -100px;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        position: relative;
+
+                        .img_otr {
+
+                            .img_inr {
+
+                                .img {
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+
+                        .social_otr {
+                            position: absolute;
+                            top: 0;
+                            right: 20px;
+                            z-index: 99;
+                            transition: var(--transition);
+
+                            &:hover {
+
+                                .share_otr {
+                                    top: 0;
+                                }
+
+                                .social_ul {
+                                    transform: scaleY(1);
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+
+                            .share_otr {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 60px;
+                                height: 60px;
+                                background-color: var(--primary-color);
+                                border-radius: 4px;
+                                cursor: pointer;
+                                position: absolute;
+                                top: -30px;
+                                right: 0;
+                                visibility: visible;
+                                opacity: 1;
+                                transition: var(--transition);
+
+                                @media (max-width: 991.98px) {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+
+                                .icon {
+                                    font-size: 24px;
+                                    color: var(--white-color);
+                                }
+                            }
+
+                            .social_ul {
+                                border-radius: 0 0 4px 4px;
+                                overflow: hidden;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                transform: scaleY(0);
+                                transform-origin: center top 0;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: var(--transition);
+
+                                .social_li {
+
+                                    .social_a {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 60px;
+                                        height: 58px;
+                                        background-color: var(--primary-color);
+
+                                        @media (min-width: 991.98px) and (max-width: 1199px) {
+                                            width: 50px;
+                                            height: 50px;
+                                        }
+
+                                        .icon {
+                                            font-size: 24px;
+                                            color: var(--white-color);
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .shapes {
+
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+
+        .shape1_otr {
+            position: absolute;
+            top: 118px;
+            left: 66px;
+
+            @media (max-width: 1199px) {
+                top: 60px;
+                left: 40px;
+            }
+
+            @media (max-width: 991.98px) {
+                display: none;
+            }
+
+            .shape1 {}
+        }
+
+        .shape2_otr {
+            position: absolute;
+            bottom: 75px;
+            right: 63px;
+            animation: rotateme 10s linear infinite;
+
+            @media (max-width: 1199px) {
+                right: 55px;
+                bottom: 40px;
+            }
+
+            @media (max-width: 991.98px) {
+                display: none;
+            }
+
+            .shape2 {}
+        }
+    }
+}

@@ -1,0 +1,187 @@
+.course-list {
+    background-color: #fff7fc;
+
+    .container {
+
+        .wrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 48px;
+
+            @media (max-width: 767.98px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px 0;
+                margin-bottom: 30px;
+            }
+
+            .section_title {}
+
+            .action_otr {
+
+                .category_btn {}
+            }
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 24px;
+
+            @media (max-width: 991.98px) {
+                grid-template-columns: 1fr;
+            }
+
+
+        }
+    }
+}
+
+.col_course_list_otr {
+
+    .col_course_list_inr {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 24px;
+        padding: 30px;
+        background-color: var(--white-color);
+        border-radius: 10px;
+        border-bottom: 3px solid transparent;
+        box-shadow: var(--box-shadow);
+        transition: var(--transition);
+
+        @media (max-width: 1199px) {
+            padding: 24px;
+        }
+
+        @media (max-width: 575.98px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+            border-bottom: 3px solid var(--primary-color);
+
+            .img_main {
+
+                .img_otr {
+
+                    .img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .content {
+
+                .text_star_main {
+
+                    .text {
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+
+        .img_main {
+
+            .img_otr {
+                overflow: hidden;
+                border-radius: 4px;
+
+                .img {
+                    width: 150px;
+                    height: 160px;
+                    object-fit: cover;
+                    transition: var(--transition);
+                }
+            }
+        }
+
+        .content {
+
+            .text_star_main {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .text {
+                    color: var(--primary-color);
+
+                    @media (max-width: 1199px) {
+                        font-size: 14px;
+                    }
+                }
+
+                .star_ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+
+                    .star_li {
+
+                        .icon {
+                            font-size: 20px;
+                            color: var(--yellow-color);
+
+                            @media (max-width: 1199px) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .heading {
+                color: var(--black-color);
+                margin: 20px 0 24px;
+                transition: var(--transition);
+
+                @media (max-width: 1399px) {
+                    font-size: 22px;
+                }
+
+                @media (max-width: 1199px) {
+                    font-size: 18px;
+                    margin: 18px 0 16px;
+                }
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+
+            .lesson_student_ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .lesson_student_li {
+                    display: flex;
+                    align-items: center;
+                    gap: 0 16px;
+
+                    @media (max-width: 1199px) {
+                        gap: 8px;
+                    }
+
+                    .icon {
+                        font-size: 22px;
+                        color: var(--body-color);
+                    }
+
+                    .text {
+                        color: var(--body-color);
+
+                        @media (max-width: 1199px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

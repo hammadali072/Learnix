@@ -1,0 +1,224 @@
+.testimonials_section {
+
+    .container {
+
+        .wrapper {
+            max-width: 565px;
+            margin: 0 auto 48px;
+            text-align: center;
+
+            @media (max-width: 767.98px) {
+                margin: 0 auto 30px;
+            }
+        }
+
+        .row {
+
+            display: flex;
+            gap: 24px 0;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @media (min-width: 767.98px) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "c1 c2 c2"
+                    "c3 c4 c5";
+                grid-gap: 24px;
+            }
+
+            .box_m_otr {
+                grid-area: c2;
+                order: 2;
+
+                // @media (min-width: 767.98px) {
+                //     width: calc(66.67% - 12px);
+                // }
+
+                .box_m_inr {
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    align-items: center;
+                    gap: 42px;
+                    padding: 28px;
+                    background-color: var(--white-shade);
+                    border-radius: 8px;
+                    box-shadow: var(--box-shadow);
+
+                    @media (max-width: 991.98px) {
+                        padding: 16px;
+                        gap: 16px;
+                    }
+
+                    @media (max-width: 575.98px) {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .profile_otr {
+
+                        .profile {
+                            width: 270px;
+                            height: 270px;
+                            object-fit: cover;
+                            object-position: center;
+                            border-radius: 100%;
+
+                            @media (max-width: 991.98px) {
+                                width: 150px;
+                                height: 150px;
+                            }
+                        }
+                    }
+
+                    .content_otr {
+
+                        .icon_otr {
+
+                            .icon {
+                                max-width: 60px;
+
+                                @media (max-width: 991.98px) {
+                                    max-width: 40px;
+                                }
+                            }
+                        }
+
+                        .heading {
+                            color: var(--black-color);
+                            margin: 30px 0;
+
+                            @media (max-width: 1399px) {
+                                font-size: 22px;
+                            }
+
+                            @media (max-width:1199px) {
+                                font-size: 20px;
+                                margin: 24px 0;
+                            }
+
+                            @media (max-width: 991.98px) {
+                                margin: 16px 0;
+                            }
+
+                            @media (max-width: 767.98px) {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .sub_heading {
+                            color: var(--black-color);
+
+                        }
+
+                        .text {
+                            color: var(--body-color);
+                            margin-top: 6px;
+
+                            @media (max-width: 767.98px) {
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box_s_otr {
+                // @media (min-width: 767.98px) {
+                //     width: calc(33.33% - 12px);
+                // }
+                order: 3;
+
+                &:first-child {
+                    order: 1;
+                }
+
+                .box_s_inr {
+                    padding: 28px;
+                    background-color: var(--white-shade);
+                    border-radius: 8px;
+                    box-shadow: var(--box-shadow);
+
+                    @media (max-width: 991.98px) {
+                        padding: 16px;
+                    }
+
+                    .icon_otr {
+
+                        .icon {
+                            max-width: 60px;
+
+                            @media (max-width: 991.98px) {
+                                max-width: 40px;
+                            }
+                        }
+                    }
+
+                    .heading {
+                        color: var(--black-color);
+                        margin: 30px 0 16px;
+
+                        @media (max-width: 991.98px) {
+                            margin: 20px 0 12px;
+                        }
+                    }
+
+                    .desc {
+                        color: var(--body-color);
+
+                        @media (max-width: 991.98px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .profile_main {
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        align-items: center;
+                        gap: 20px;
+                        margin-top: 20px;
+
+                        @media (max-width: 991.98px) {
+                            gap: 16px;
+                        }
+
+                        .profile_otr {
+
+                            .profile {
+                                width: 60px;
+                                height: 60px;
+                                object-fit: cover;
+                                object-position: center;
+                                border-radius: 100%;
+
+                                @media (max-width: 991.98px) {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+                        }
+
+                        .content {
+
+                            .sub_heading {
+                                color: var(--black-color);
+                                margin: 0;
+                            }
+
+                            .text {
+                                color: var(--body-color);
+                                margin-top: 6px;
+
+                                @media (max-width: 991.98px) {
+                                    margin-top: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col_box_otr {}
+        }
+    }
+}
